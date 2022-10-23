@@ -7,4 +7,29 @@
 <ul>
     <li><a href="https://space.bilibili.com/178661759">哔哩哔哩</a></li>
 </ul>
+            <div id="yang" style="font font-size:15px;color:brown;">请为文字选择颜色和字号</div>
+        <form style="border-style:solid;border-width:1px;width:200px">选择颜色<br />
+            <input type="radio" name="yanse" value="red"onclick="setColor(this)">红色
+            <input type="radio" name="yanse" value="blue"onclick="setColor(this)">蓝色
+            <input type="radio" name="yanse" value="green" onclick="setColor(this)">绿色
+        </form><br />
+        <form style="border-style:solid;border-width:1px;width:200px">选择字号<br />
+            <select style="width:100px"  onchange="setSize(this)" >
+                <option value="10px">10px
+                <option value="40px">40px
+                <option value="80px">80px
+                <option value="100px">100px
+                <option value="150px">150px
+                <option value="1000px">1000px
+        </form>
+        <script>
+            var div=document.getElementById("yang")
+            function setColor(yzm){
+            div.style.color=yzm.value
+            }
+             function setSize(yzm) {            
+            div.style.fontSize = yzm.value
+        }
+             
+        </script>
     </body>
